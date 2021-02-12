@@ -1,12 +1,12 @@
-import * as React from "react";
-import { mount } from "enzyme";
-var chai = require("chai");
-var expect = chai.expect;
-import About from "../../src/components/about";
+import * as React from 'react'
+import { mount } from 'enzyme'
+import About from '../../src/components/about'
+const chai = require('chai')
+const expect = chai.expect
 
-describe("About component", () => {
-  it("should render without throwing an error", function () {
-    const wrap = mount(<About />);
-    expect(wrap.find("p").text()).to.equal("About me");
-  });
-});
+describe('About component', () => {
+  it('should render without throwing an error', function () {
+    const wrap = mount(<About />)
+    expect(wrap.find('p').text()).to.equal('About me')
+  })
+})

@@ -8,8 +8,8 @@
     "start": "BABEL_ENV=test next start",
     "test": "BABEL_ENV=test mocha --recursive --require @babel/register",
     "test:watch": "npm run test -- --watch",
-    "eslint": "eslint src",
-    "eslint:fix": "eslint src --fix"
+    "eslint": "eslint src test",
+    "eslint:fix": "eslint src test --fix"
   },
   "dependencies": {
     "@babel/cli": "^7.7.4",

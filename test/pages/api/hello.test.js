@@ -1,19 +1,19 @@
-import handler from "../../../src/pages/api/hello";
-import { createMocks } from "node-mocks-http";
-var chai = require("chai");
-var expect = chai.expect;
+import handler from '../../../src/pages/api/hello'
+import { createMocks } from 'node-mocks-http'
+const chai = require('chai')
+const expect = chai.expect
 
-it("hello test", () => {
+it('hello test', () => {
   const { req, res } = createMocks({
-    method: "GET",
-  });
-  handler(req, res);
+    method: 'GET'
+  })
+  handler(req, res)
 
-  expect(res._getStatusCode()).to.equal(200);
+  expect(res._getStatusCode()).to.equal(200)
 
   expect(JSON.parse(res._getData())).to.deep.equal({
-    text: "Hello",
-  });
-});
+    text: 'Hello'
+  })
+})
 
-export {};
+export {}
