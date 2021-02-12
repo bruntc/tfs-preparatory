@@ -20,7 +20,7 @@ jobs:
           node-version: 12.x
       - name: npm install, test and build
         run: |
-          npm
+          npm install
           npm eslint
           npm test
           npm build
