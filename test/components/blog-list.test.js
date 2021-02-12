@@ -2,7 +2,7 @@ import * as React from "react";
 import { shallow } from "enzyme";
 var chai = require("chai");
 var expect = chai.expect;
-import Blog from "../../components/blog-list";
+import Blog from "../../src/components/blog-list";
 
 const allPostsData = [
   { id: 1, date: "12/1/2011", title: "title" },
