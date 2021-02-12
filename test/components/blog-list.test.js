@@ -6,7 +6,7 @@ import Adapter from "@wojtekmaj/enzyme-adapter-react-17";
 Enzyme.configure({ adapter: new Adapter() });
 
 import * as React from "react";
-import { mount, shallow } from "enzyme";
+import { shallow } from "enzyme";
 var chai = require("chai");
 var expect = chai.expect;
 import Blog from "../../components/blog-list";
@@ -21,4 +21,20 @@ describe("Blog list component", () => {
     const wrap = shallow(<Blog allPostsData={allPostsData} />);
     expect(wrap.find("h2").text()).to.equal("Blog");
   });
+
+  it("should render with data", function () {
+    const wrap = shallow(<Blog allPostsData={allPostsData} />);
+    expectChildElements(wrap, 2);
+  });
+
+  it("should render with no data", function () {
+    const wrap = shallow(<Blog allPostsData={[]} />);
+    expect(wrap.find("h2").text()).to.equal("Blog");
+    expectChildElements(wrap, 0);
+  });
 });
+
+const expectChildElements = (wrap, no) => {
+  expect(wrap.find("Link").length == no).to.be.true;
+  expect(wrap.find("Date").length == no).to.be.true;
+};
