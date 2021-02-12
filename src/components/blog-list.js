@@ -1,8 +1,8 @@
-import utilStyles from "../styles/utils.module.css";
-import Link from "next/link";
-import Date from "../components/date";
+import utilStyles from '../styles/utils.module.css'
+import Link from 'next/link'
+import Date from '../components/date'
 
-export default function Blog({ allPostsData }) {
+export default function Blog ({ allPostsData }) {
   return (
     <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
       <h2 className={utilStyles.headingLg}>Blog</h2>
@@ -20,5 +20,5 @@ export default function Blog({ allPostsData }) {
         ))}
       </ul>
     </section>
-  );
+  )
 }
