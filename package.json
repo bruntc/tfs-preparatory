@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "test": "mocha --recursive --require @babel/register",
+    "dev": "BABEL_ENV=dev next dev",
+    "build": "BABEL_ENV=dev next build",
+    "start": "BABEL_ENV=test next start",
+    "test": "BABEL_ENV=test mocha --recursive --require @babel/register",
     "test:watch": "npm run test -- --watch"
   },
   "dependencies": {
