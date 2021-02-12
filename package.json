@@ -6,14 +6,20 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "mocha"
+    "test": "mocha --require @babel/register",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/register": "^7.7.4",
     "chai": "^4.3.0",
     "date-fns": "^2.17.0",
     "gray-matter": "^4.0.2",
     "mocha": "^8.3.0",
     "next": "^10.0.0",
+    "node-mocks-http": "^1.10.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "remark": "^13.0.0",
