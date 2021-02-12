@@ -1,4 +1,5 @@
-var jsdom = require("jsdom").jsdom;
+// var jsdom = require("jsdom").jsdom;
+import jsdom from ("jsdom").jdsom;
 
 var exposedProperties = ["window", "navigator", "document"];
 
