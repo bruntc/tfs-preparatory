@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "mocha --recursive --require @babel/register"
+    "test": "mocha --recursive --require @babel/register",
+    "test:watch": "npm run test -- --watch"
+
   },
   "dependencies": {
     "@babel/cli": "^7.7.4",
@@ -23,5 +25,11 @@
     "react-dom": "17.0.1",
     "remark": "^13.0.0",
     "remark-html": "^13.0.1"
+  },
+  "devDependencies": {
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
+    "enzyme": "^3.11.0",
+    "jsdom": "16.4.0",
+    "jsdom-global": "3.0.2"
   }
 }
