@@ -5,6 +5,7 @@ import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
 import About from "../components/about";
+import Blog from "../components/blog-list";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -22,7 +23,8 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <About />
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+      <Blog allPostsData={allPostsData} />
+      {/* <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
@@ -36,8 +38,8 @@ export default function Home({ allPostsData }) {
               </small>
             </li>
           ))}
-        </ul>
-      </section>
+        </ul> */}
+      {/* </section> */}
     </Layout>
   );
 }
