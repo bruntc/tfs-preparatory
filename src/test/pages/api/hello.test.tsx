@@ -1,4 +1,4 @@
-import handler from '../../../src/pages/api/hello'
+import handler from '../../../pages/api/hello';
 import { createMocks } from 'node-mocks-http'
 const chai = require('chai')
 const expect = chai.expect

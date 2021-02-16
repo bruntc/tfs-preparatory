@@ -1,0 +1,13 @@
+{
+  "extension": [
+    "ts"
+  ],
+  "spec": "src/**/*.test.tsx",
+  "require": [
+    "src/test/mocha.env",
+    "ts-node/register",
+    "jsdom-global/register",
+    "ignore-styles",
+    "src/test/unitTestSetup.ts"
+  ]
+}

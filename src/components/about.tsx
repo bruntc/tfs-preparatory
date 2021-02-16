@@ -1,4 +1,5 @@
-import utilStyles from '../styles/utils.module.css'
+import React from "react";
+const utilStyles = require('../styles/utils.module.css')
 
 export default function About () {
   return (
