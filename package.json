@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "BABEL_ENV=dev next dev",
-    "build": "BABEL_ENV=dev next build",
-    "start": "BABEL_ENV=test next start",
-    "test": "BABEL_ENV=test mocha --require ignore-styles",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "mocha",
     "test:watch": "npm run test -- --watch",
     "eslint": "eslint src",
     "eslint:fix": "eslint src --fix"
@@ -16,7 +16,6 @@
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
     "@babel/register": "^7.7.4",
-    "babel-plugin-module-name-mapper": "^1.2.0",
     "chai": "^4.3.0",
     "date-fns": "^2.17.0",
     "gray-matter": "^4.0.2",
