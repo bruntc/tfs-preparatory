@@ -1,12 +1,10 @@
 import React from "react";
-import utilStyles from '../styles/utils.module.css'
-import {Card} from './card'
+const utilStyles = require('../styles/utils.module.css')
 
 export default function About () {
   return (
     <section className={utilStyles.headingMd}>
       <p>About me</p>
-      <Card title="title" paragraph="aasdasdasdasd"/>
     </section>
   )
 }
