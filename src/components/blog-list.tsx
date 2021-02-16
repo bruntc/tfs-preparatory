@@ -1,6 +1,8 @@
-import utilStyles from '../styles/utils.module.css'
+import React from "react"
+const utilStyles = require('../styles/utils.module.css')
 import Link from 'next/link'
 import Date from '../components/date'
+
 
 export default function Blog ({ allPostsData }) {
   return (
