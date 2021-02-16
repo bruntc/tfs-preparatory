@@ -10,7 +10,7 @@ module.exports = {
           "module-name-mapper",
           {
             moduleNameMapper: {
-              "\\.css$": "<rootDir>/test/mock-styles/style-mock.js",
+              "\\.css$": "<rootDir>/src/test/mock-styles/style-mock.js",
             },
           },
         ],
