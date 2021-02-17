@@ -27,7 +27,7 @@ describe("Blog list component", () => {
   });
 });
 
-const expectChildElements = (wrap, no) => {
+const expectChildElements = (wrap, no: number) => {
   expect(wrap.find("Link").length == no).to.be.true;
   expect(wrap.find("Date").length == no).to.be.true;
 };
