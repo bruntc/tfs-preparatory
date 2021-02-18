@@ -1,12 +1,12 @@
 import * as React from "react";
 import { shallow } from "enzyme";
+import { Blog } from "../../components/blog-list";
 var chai = require("chai");
 var expect = chai.expect;
-import Blog from "../../components/blog-list";
 
 const allPostsData = [
-  { id: 1, date: "12/1/2011", title: "title" },
-  { id: 2, date: "12/1/2011", title: "title2" },
+  { id: "ID1", date: "12/1/2011", title: "title" },
+  { id: "ID2", date: "12/1/2011", title: "title2" },
 ];
 
 describe("Blog list component", () => {
