@@ -5,6 +5,7 @@ import { getSortedPostsData } from "../lib/posts";
 import { About } from "../components/about";
 import { Blog } from "../components/blog-list";
 import { OurLabelledTextbox } from "../components/textbox";
+import { Button } from "../components/button";
 
 
 
@@ -25,6 +26,7 @@ export default function Home({ allPostsData }) {
       </Head>
       <About />
       <OurLabelledTextbox defaultText='Default text' label='Label title'/>
+      <Button buttonText="Click Me!"></Button>
       <Blog allPostsData={allPostsData} />
     </Layout>
   );
