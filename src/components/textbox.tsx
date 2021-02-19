@@ -5,7 +5,7 @@ type TextboxProps = {
     label: string
   }
 
-export const OurLabelledTextbox: React.FC = (props: TextboxProps) => {
+export const OurLabelledTextbox: React.FC<TextboxProps> = (props) => {
     return (
         <>
             <label>{props.label}: </label>
