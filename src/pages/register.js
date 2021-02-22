@@ -25,3 +25,6 @@ export default function Register() {
     </Layout>
   );
 }
+
+
+// set up database with fastify
