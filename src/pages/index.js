@@ -6,7 +6,7 @@ import { About } from "../components/about";
 import { Blog } from "../components/blog-list";
 import { OurLabelledTextbox } from "../components/textbox";
 import { Button } from "../components/button";
-
+import { CollapsibleCard } from "../components/collapsableCard";
 
 
 export async function getStaticProps() {
@@ -27,6 +27,7 @@ export default function Home({ allPostsData }) {
       <About />
       <OurLabelledTextbox defaultText='Default text' label='Label title'/>
       <Button buttonText="Click Me!"></Button>
+      <CollapsibleCard frontText="Hello! (Click Me)" backText="This was hidden!"></CollapsibleCard>
       <Blog allPostsData={allPostsData} />
     </Layout>
   );
